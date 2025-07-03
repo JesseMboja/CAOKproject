@@ -1,0 +1,36 @@
+body {
+    height: 1500px;
+    background-color: antiquewhite;
+    }
+
+p{
+    font-size: large;
+    font-family: Georgia;
+}
+.container-div{
+    position: fixed;
+}
+
+.header-div{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(144, 96, 61);  
+    font-family: Garamond;
+    position: relative;
+    margin-top: 5px;
+} 
+.intro-header{
+    font-size: 28px;  
+    color: rgb(243, 241, 241); 
+    padding: 0;  
+          
+}
+.logo-div{
+    position: absolute;
+    left: 30px;
+    top: -4px;
+}
+.logo-img{
+    width: 80px;
+    border-radius: 80px;
+}

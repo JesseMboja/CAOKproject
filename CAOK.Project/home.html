@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Child Aid Organisation Kenya</title>
+          <link rel="stylesheet" href="homestyle.css">
+            
+    </head>
+    <body>
+.
+
+     <div class="container-div">
+        <div class="header-div">
+        <h1 class="intro-header">Child Aid Organisation</h1>
+        <div class="logo-div">
+            <img class="logo-img" src="Images/logo.avif">
+        </div>
+        <div class="caption-div"><u style="text-decoration-thickness: 0.4px;">Blessed to be a blessing</u> ~Gen.12:2</div>
+    </div>
+
+
+     <div class="navigation-div">
+        <div class="home-div">
+            <button onclick="location.href='home.html';" class="home-button">
+                Home
+            </button>
+        </div>
+
+        <div class="about-div">
+            <button onclick="location.href='about.html';" class="about-button">
+                About
+            </button>
+        </div>
+
+        <div class="activities-div">
+            <button onclick="location.href='activities.html';" class="activities-button">
+                Activities
+            </button>
+
+        </div>
+
+        <div class="portofolio-div">
+            <button onclick="location.href='portofolio.html';" class="portofolio-button">
+                Portofolio
+            </button>
+        </div>
+
+        <div class="contact-div">
+            <button onclick="location.href='contact.html';" class="contact-button">
+                Contact
+            </button>
+        </div>
+
+        <div class="donate-div">
+            <button class="donate-button">
+                ❤️Donate
+            </button>
+        </div>
+     </div>
+     <div class="purpose-summary">
+        Spreading love by supporting less privileged children to be the stars they were destined to be
+     </div>
+     </div> 
+     <hr style="height: 3px;">
+     <div class="facts-div" id="factsdiv">
+        
+        <div class="know-div">
+            <h2>Did You Know</h2>
+            Over 280 million children in Africa are living in dier poverty.
+            That’s nearly half of all children on the continent, often lacking access to basic necessities like clean water, healthcare, and education.
+        </div>
+        <div class="video-div">
+            <video height="400" width="1000" autoplay loop muted>
+            <source src="Images/africa.mp4" type="video/mp4">
+             Your browser does not support the video tag.
+            </video>            
+        </div>        
+        </div>
+        <script>
+        function stretch() {
+        document.getElementById("factsdiv").classList.add("stretch");
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+            stretch(); // Call your custom function
+            }
+        });
+        }, {
+        threshold: 0.7 // Trigger when 100% of the div is visible
+        });
+
+        observer.observe(document.getElementById("factsdiv"));
+    </script>
+    <div class="closing-div">
+        <div class="join-us">
+            <h3>Wanna join us?</h3>
+            <p>Careers</p>
+            <p>Volunteer</p>
+            <p>Donate</p>
+        </div>
+        <div class="interests-div">
+            <h3>Links of Interest</h3>
+            <p>About us</p>
+            <p>FAQ</p>
+            <p>Blog</p>
+            <p>Contact us</p>
+        </div>
+        <div class="follow-div">
+            <h3>Follow us</h3>
+            <img class="soc-media" src="Images/socmediabackground2.png">
+        </div>
+
+    </div>
+    <footer>
+        <P class="footer-p">&copy 2025 Child Aid Organisation. All rights reserved</P>
+    </footer>
+    </body>
+</html>
